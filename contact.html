@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>
+            El Dorado - Tax Services
+        </title>
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body> 
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="logo/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="photos.html">PHOTOS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onClick="showMenu()"></i>
+    </nav>
+<h1> 
+    Contact Us
+</h1>
+<p>
+    El Dorado<br>
+    101 N seymour Ave, <br> 
+    Mundelein, IL, 60060 <br><br>
+</p>
+<p>
+    Website: Eldorado.com<br>
+    Phone: (224)-475-0593<br>
+    E-mail: Doradotaxes@gmail.com<br>
+</p>
+<h1><br>
+Office Hours
+</h1>
+<div id="hoursopen">
+<p>
+    Monday - Friday:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  10AM to 7PM <br>
+    Saturday: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10AM to 3PM <br>
+    Sunday: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Closed
+</p><br>
+</div>
+<div class="contact-col">
+    <form action="form-handler.php" method="POST">
+        <input type="text" name="name" placeholder="Enter your name" required><br>
+        <input type="email" name="email" placeholder="Enter email address" required><br>
+        <input type="text" name="subject" placeholder="Enter your subject" required><br>
+        <textarea  rows="8" name="message" placeholder="Message" required></textarea><br>
+        <button type="submit" class="hero-btn red-btn">Send Message</button>
+    </form>
+
+
+</div>
+</section>
+
+
+
+
+<!-------Javascript for Toggle Menu--------->
+
+<script>
+
+var navLinks = document.getElementById("navLinks");
+function showMenu(){
+    navLinks.style.right = "0"
+}
+function hideMenu(){
+    navLinks.style.right = "-200"
+}
+</script>
+</body>
+</html>
